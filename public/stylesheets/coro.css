@@ -1,0 +1,9 @@
+body{
+	font-family: 'Yusei Magic', sans-serif;
+	background-image: url(../multimedia/brick_wall.jpg);
+	background-size: cover;
+}
+
+#frontvid{
+	width:100%;	
+}
