@@ -6,6 +6,7 @@ function scrollFunction() {
   } else {
     document.getElementById("navbar").style.top = "-70px";
 	document.getElementById("dropMenu").style.display = "none";
+	document.getElementById("hamb").style.backgroundColor = "#e20101"  
   }
 } 
 
@@ -13,7 +14,9 @@ function dropmenu() {
 	var x = document.getElementById("dropMenu");
 	if (x.style.display === "flex") {
 		x.style.display = "none";
+		document.getElementById("hamb").style.backgroundColor = "#e20101"
 	} else {
 		 x.style.display = "flex";
+		document.getElementById("hamb").style.backgroundColor = "#c41313"
 	}
 } 
