@@ -1,20 +1,25 @@
+html {
+  scroll-behavior: smooth;
+ }
+
 body{
-	font-family: 'Yusei Magic', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	background-image: url(../multimedia/brick_wall.jpg);
 	background-size: cover;
 	background-attachment: fixed;
-	text-shadow: 0.5px 0.5px 1px #000000;
+	/* text-shadow: 0.5px 0.5px 1px #000000; */
 }
 
 #frontvid{
 	width:100%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 #pastoral{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 2em 1em 2em 1em;
+	padding: 4em 1em 4em 1em;
 }
 
 #navbar {
@@ -28,6 +33,7 @@ body{
   position: fixed;
   top: -70px;
   width: 100%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   transition: top 0.3s;
 	
 }
@@ -43,7 +49,11 @@ body{
 
 }
 
-#navbar a:hover {
+#navbar #dropMenu a:hover {
+  background-color: #c41313 ;
+}
+
+#navbar #myLinks a:hover {
   background-color: #c41313 ;
 }
 
@@ -68,31 +78,84 @@ body{
 	display: flex;
 	background-color: rgba(0,0,0,0.2);
 	margin:auto;
-	padding: 5em 2.5em 5em 2.5em;
+	padding: 3em 8em 3em 8em;
 	justify-content: space-around;
 	align-items: center;
 	color: black;
+	font-size:18px;
+	text-align:justify
 }
 
 .section2{
 	display: flex;
 	background-color: rgba(226,1,1,0.8);
 	margin:auto;
-	padding: 5em 2.5em 5em 2.5em;
+	padding: 3em 8em 3em 8em;
 	justify-content: space-around;
 	align-items: center;
 	color: white;
+	font-size:18px;
+	text-align:justify
 }
 
 .section1 img{
-	padding: 4em 2em 4em 2em;
+	padding: 2em 2em 2em 2em;
 }
 
 .section2 img{
-	padding: 4em 2em 4em 2em;
+	padding: 2em 2em 2em 2em;
 }
 
+/* =========== SOCIAL MEDIA ICONS =============== */
+
+
+.fasocial {
+  padding: 15px;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+	transition: opacity 0.3s;
+}
+
+.fa:hover {
+    opacity: 0.7;
+	text-decoration: none;
+	color:white;
+	transition: opacity 0.3s;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #dd4b39;
+  color: white;
+}
+
+/* ======= RESPONSIVE CSS ======= */
+
+
 @media screen and (max-width: 600px) {
+	
+	.videowrapper {
+		display:flex;
+		justify-content:center;
+		overflow:hidden;
+		left: -50%;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
+
+	#frontvid{
+		width: auto;
+  		height: 22em;
+		
+	}
 	#myLinks {
 		display: none;
 	}
@@ -102,9 +165,19 @@ body{
 	}
 	.section1{
 		flex-direction: column;
+		padding: 3em 2.5em 3em 2.5em;
 	}
 	.section2{
 		flex-direction: column;
+		padding: 3em 2.5em 3em 2.5em;
+	}
+	.fasocial {
+	  padding: 10px;
+	  font-size: 20px;
+	  width: 40px;
+	  height: 40px;
 	}
 }
+
+
 

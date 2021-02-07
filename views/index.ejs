@@ -6,9 +6,9 @@
 	<link rel="icon" href="multimedia/logo_template.png" type="image/gif" sizes="32x32"> 
 	
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=family=Yusei+Magic+Alternates:200,300,400,700" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet"> 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet"> 
 
     <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -31,9 +31,9 @@
 			<img src="multimedia/logo_template.png" width="27em" height="30em" >
 		</div>
 		<div id="myLinks" style="justfify-self:stretch">	
-			 <a href="#home">Inicio</a>
-			 <a href="#news">Nosotros</a>
-			 <a href="#contact">Novedades</a>
+			<a href="#top">Inicio</a>
+			<a href="#about">Nosotros</a>
+			<a href="#news">Novedades</a>
 			<a href="#contact">Contacto</a>
 		</div>
 		<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -42,49 +42,51 @@
 				<i class="fa fa-bars"></i>
 			</a>
 		<div id="dropMenu">	
-			 	<a href="#home">Inicio</a>
-			 	<a href="#news">Nosotros</a>
-			 	<a href="#contact">Novedades</a>
-				<a href="#contact">Contacto</a>
+			<a href="#top" onclick="disappear()">Inicio</a>
+			<a href="#about" onclick="disappear()">Nosotros</a>
+			<a href="#news" onclick="disappear()">Novedades</a>
+			<a href="#contact" onclick="disappear()">Contacto</a>
 		</div>
 		</div>	
 		
 	</div>
+
+	<div class="videowrapper">
+		<video id="frontvid" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+			<source src="/multimedia/frontATE.mp4" type="video/webm">
+		</video>
+	</div>
 	
-	
-	<video id="frontvid" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="/multimedia/frontATE.mp4" type="video/webm">
-    </video>
 	<div id="pastoral">
-		<img src="https://www.lunapic.com/editor/premade/effect-bw.gif" width="50vh" height="50vh" >
+		<a href="#" class="fa fa-facebook fasocial"></a>
 		<img src="https://www.lunapic.com/editor/premade/effect-bw.gif" width="90vh" height="90vh" >
-		<img src="https://www.lunapic.com/editor/premade/effect-bw.gif" width="50vh" height="50vh" >
+		<a href="#" class="fa fa-instagram fasocial"></a>
 	</div>
 	
 	
-	<div class="section2">
-		<img src="https://www.lunapic.com/editor/premade/effect-bw.gif" width="500px" height="500px" >
+	<div class="section1" id="about">
+		<img src="https://www.lunapic.com/editor/premade/effect-bw.gif" width="300px" height="300px" >
 		<div style="display: flex; flex-direction:column;">
 			<h1>
 				Somos el coro mas pulento de Chile!
 			</h1>
-			<h5>
+			<p>
 				Llevamos años de experiencia cantando canciones buenas, con buenos cabros, haciendo enojar al Padre Carlos, y tomandonos Santa Gema. Tenemos un bonito sistema donde nos robamos a las personas de otros coros que nos interesen, asi que si quieres unirte, no dudes en contactarte con nosotros! El cómo hacerlo es un misterio, dado que no tenemos un número como tal, y el email no lo revisamos tanto. Quizas podrían probar suerte con el Instagram
-			</h5>
+			</p>
 		</div>	
 	</div>
-	<div class="section1">
+	<div class="section2" id="news">
 		<div style="display: flex; flex-direction:column;">
 			<h1>
 				Somos el coro mas pulento de Chile!
 			</h1>
-			<h5>
+			<p>
 				Llevamos años de experiencia cantando canciones buenas, con buenos cabros, haciendo enojar al Padre Carlos, y tomandonos Santa Gema. Tenemos un bonito sistema donde nos robamos a las personas de otros coros que nos interesen, asi que si quieres unirte, no dudes en contactarte con nosotros! El cómo hacerlo es un misterio, dado que no tenemos un número como tal, y el email no lo revisamos tanto. Quizas podrían probar suerte con el Instagram
-			</h5>
+			</p>
 		</div>
-		<img src="https://www.lunapic.com/editor/premade/effect-bw.gif" width="500px" height="500px" >
+		<img src="https://www.lunapic.com/editor/premade/effect-bw.gif" width="300px" height="300px" >
 	</div>
-	<div class="section2">
+	<div class="section1" id="contact">
 		<h1>
 			Siguenos en redes, culiao!
 		</h1>

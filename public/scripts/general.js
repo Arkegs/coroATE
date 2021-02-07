@@ -20,3 +20,9 @@ function dropmenu() {
 		document.getElementById("hamb").style.backgroundColor = "#c41313"
 	}
 } 
+
+function disappear(){
+	var x = document.getElementById("dropMenu");
+	x.style.display = "none";
+	document.getElementById("hamb").style.backgroundColor = "#e20101"
+}
