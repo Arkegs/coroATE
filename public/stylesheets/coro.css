@@ -113,7 +113,7 @@ body{
 	display: flex;
 	background-color: rgba(226,1,1,0.8);
 	margin:auto;
-	padding: 3em 7em 3em 7em;
+	padding: 5em 7em 5em 7em;
 	justify-content: space-around;
 	align-items: center;
 	color: white;
@@ -121,15 +121,71 @@ body{
 
 }
 
-.section1 img, p, h1{
-	padding: 2em 1em 2em 1em;
+.section1 img{
+	margin: 4em 1em 4em 1em;
 
 }
 
-.section2 img, p, h1{
-	padding: 2em 1em 2em 1em;
+.section2 img{
+	margin: 4em 1em 4em 1em;
+}
+
+
+.youtubeWrapper iframe {
+  min-width: 360px;
+  min-height:200px;
+  width: 100%;
+  height: auto;
+	margin: 2em 2em 2em 2em;
+}
+
+.section1 .hrBar{
+	width:200px;
+	height:6px;
+	margin:0;
+	margin-top:10px;
+	margin-bottom:15px;
+	padding:0;
+}
+
+.section2 .hrBar{
+	width:200px;
+	height:8px;
+	margin:0;
+	margin-top:10px;
+	margin-bottom:15px;
+	padding:0;
+}
+
+hr {
+  border-top: 1.5px solid black;
+	width:80%;
+}
+
+#songchart{
+	display: flex;
+	flex-direction:row;
+	justify-content:space-around; 
 
 }
+
+.songlist{
+	list-style-type:none;
+}
+
+.songlist li{
+	margin: 20px 0 20px 0;
+}
+
+.songlist i{
+	margin: 4px 4px 4px 0;
+	padding: 8px 10px 8px 10px;
+	color:white;
+	border-radius: 10px;
+	background-color:rgba(226,1,1,0.8);
+	font-size:20px;
+}
+
 
 /* =========== SOCIAL MEDIA ICONS =============== */
 
@@ -220,13 +276,13 @@ body{
 		max-width:100%;
 	}
 	
-	.section1 img, p, h1{
-		padding: 1em 0.5em 1em 0.5em;
+	.section1 img{
+		padding: 1em 0.5em 0 0.5em;
 		max-width:100%;
 	}
 
-	.section2 img, p, h1{
-		padding: 1em 0.5em 1em 0.5em;
+	.section2 img{
+		padding: 1em 0.5em 0 0.5em;
 		max-width:100%;
 	}
 	
@@ -237,6 +293,24 @@ body{
 	  height: 40px;
 		margin:auto;
 	}
+	.youtubeWrapper iframe {
+	  min-width: 0;
+	  min-height:0;
+		margin: 0;
+	}
+	#songchart{
+		flex-direction:column;
+		justify-content:center;
+		align-items:flex-start;
+	}
+	.songlist{
+		margin-top:-10px;
+		margin-bottom:-10px;
+		padding-top:0;
+		padding-bottom:0;
+	}
+	
+
 }
 
 
