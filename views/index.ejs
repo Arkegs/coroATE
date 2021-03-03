@@ -118,7 +118,7 @@
 			<p>
 				Por suerte para ustedes, nosotros no somos especialmente cagaos, asi que tenemos a disposición las partituras, acordes y letras de las canciones que más les agraden. Ponerlas aquí directo podría gastar mucho espacio, asi que pueden verlas a continuación en el menú desplegable. Si un día son demasiadas, capaz hagamos una página aparte solo para ellas. Hoy no, pero quizás algún día.
 			</p>
-			<h2 style="justify-self:center; align-self:center; padding-top:2em;">
+			<h2 style="justify-self:center; align-self:center; padding-top:2em;" onclick="disappearSongchart()">
 				Contenido <i class="fa fa-angle-down"></i>
 			</h2>
 			<hr/>
@@ -128,38 +128,38 @@
 						<ul class="songlist">
 							<li>Con estas cenizas
 								<div>
-									<i class="fa fa-download" aria-hidden="true"></i>
-									<i class="fa fa-eye"></i>
+									<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-eye"></i></a>
 								</div>
 							</li>
 							<li>Venga tu reino
 								<div>
-									<i class="fa fa-download" aria-hidden="true"></i>
-									<i class="fa fa-eye"></i>
+									<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-eye"></i></a>
 								</div>
 							</li>
 							<li>Reyes del Oriente
 								<div>
-									<i class="fa fa-download" aria-hidden="true"></i>
-									<i class="fa fa-eye"></i>
+									<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-eye"></i></a>
 								</div>
 							</li>
 							<li>Noche de paz
 								<div>
-									<i class="fa fa-download" aria-hidden="true"></i>
-									<i class="fa fa-eye"></i>
+									<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-eye"></i></a>
 								</div>
 							</li>
 							<li>Padre Nuestro
 								<div>
-									<i class="fa fa-download" aria-hidden="true"></i>
-									<i class="fa fa-eye"></i>
+									<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-eye"></i></a>
 								</div>
 							</li>
 							<li>Quedate con nosotros
 								<div>
-									<i class="fa fa-download" aria-hidden="true"></i>
-									<i class="fa fa-eye"></i>
+									<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-eye"></i></a>
 								</div>
 							</li>
 						</ul>
@@ -170,32 +170,32 @@
 						<ul class="songlist">
 							<li>Soñar
 								<div>
-									<i class="fa fa-download" aria-hidden="true"></i>
-									<i class="fa fa-eye"></i>
+									<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-eye"></i></a>
 								</div>
 							</li>
 							<li>María de la Alianza
 								<div>
-									<i class="fa fa-download" aria-hidden="true"></i>
-									<i class="fa fa-eye"></i>
+									<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-eye"></i></a>
 								</div>
 							</li>
 							<li>Virgen del Carmen Bella
 								<div>
-									<i class="fa fa-download" aria-hidden="true"></i>
-									<i class="fa fa-eye"></i>
+									<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-eye"></i></a>
 								</div>
 							</li>
 							<li>Padre Amerindio
 								<div>
-									<i class="fa fa-download" aria-hidden="true"></i>
-									<i class="fa fa-eye"></i>
+									<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-eye"></i></a>
 								</div>
 							</li>
 							<li>Ven
 								<div>
-									<i class="fa fa-download" aria-hidden="true"></i>
-									<i class="fa fa-eye"></i>
+									<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-eye"></i></a>
 								</div>
 							</li>
 						</ul>
@@ -206,13 +206,25 @@
 	</div>
 	
 	<div class="section2" id="contact">
-		<h1>
-			Siguenos en redes, culiao!
-		</h1>
-		<h2>
-			Somos el coro mas pulento de Chile!
-		</h2>
+		<div style="display: flex; flex-direction:column;">
+			<h1 style="justify-self:center; align-self:center; padding-top:1em; padding-bottom:1em;">
+				Síguenos en nuestras redes!
+			</h1>
+			<p>
+				Siempre se dice que un coro o un grupo de personas es tan grande y bonito como las personas que los siguen, y siendo así, no vamos a llegar muy lejos si todos nuestros seguidores son de cartón. Sígannos en todas nuestras redes, tapícennos en likes y comentarios, y quizás quizás las cosas vayan más pulentas para todos.
+			</p>
+			<div id="redescoro">
+				<a href="https://www.instagram.com/coro.ate" class="fa fa-instagram fasocial"></a>
+				<a href="https://www.youtube.com/c/CoroATEPastoralJuvenilSantaGema" class="fa fa-youtube-play fasocial"></a>
+			</div>
+		</div>
 	</div>
+	
+	<div id="footer">
+		<img src="multimedia/pastoral-bw.png" width="80px" height="60px" /> 
+		Coro A tu encuentro, 2021
+		<img src="multimedia/coroate-bw.png" width="80px" height="60px" />
+	</div>	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="scripts/general.js"></script> 
 </body>

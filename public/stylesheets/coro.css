@@ -166,11 +166,12 @@ hr {
 	display: flex;
 	flex-direction:row;
 	justify-content:space-around; 
-
+	opacity: 0;
 }
 
 .songlist{
 	list-style-type:none;
+	display:none;
 }
 
 .songlist li{
@@ -186,6 +187,22 @@ hr {
 	font-size:20px;
 }
 
+#redescoro{
+	display: flex; justify-content: space-around;
+	margin-top: 4em;
+}
+
+#footer{
+	display: flex;
+	background-color: #e20101;
+	margin:auto;
+	padding: 1em 2em 1em 2em;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	font-size:12px;
+	box-shadow: -10px -6px 16px 0px rgba(0,0,0,0.2);
+}
 
 /* =========== SOCIAL MEDIA ICONS =============== */
 
@@ -219,6 +236,28 @@ hr {
   color: white;
 }
 
+#redescoro .fasocial{
+  padding: 20px;
+  font-size: 40px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+  transition: opacity 0.3s;
+}
+
+#redescoro .fa-instagram {
+  background: white;
+  color: #e20101;
+}
+
+#redescoro .fa-youtube-play {
+  background: white;
+  color: #e20101;
+}
+
 /* ======= RESPONSIVE CSS ======= */
 
 
@@ -239,7 +278,6 @@ hr {
 		display:flex;
 		justify-content:center;
 		overflow:hidden;
-		
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	}
 	
