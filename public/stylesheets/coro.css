@@ -57,7 +57,7 @@ body{
   top: -70px;
   width: 100%;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  transition: top 0.3s;
+  -webkit-transition: top 0.3s;
 	
 }
 
@@ -122,7 +122,7 @@ body{
 }
 
 .section1 img{
-	margin: 4em 1em 4em 1em;
+	margin: 4em 2em 4em 2em;
 
 }
 
@@ -188,8 +188,10 @@ hr {
 }
 
 #redescoro{
-	display: flex; justify-content: space-around;
-	margin-top: 4em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 2em;
 }
 
 #footer{
@@ -216,14 +218,14 @@ hr {
   text-decoration: none;
   margin: 5px 5px;
   border-radius: 50%;
-	transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
 }
 
 .fa:hover {
     opacity: 0.7;
 	text-decoration: none;
 	color:white;
-	transition: opacity 0.3s;
+	-webkit-transition: opacity 0.3s;
 }
 
 .fa-facebook {
@@ -245,7 +247,14 @@ hr {
   text-decoration: none;
   margin: 5px 5px;
   border-radius: 50%;
-  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+}
+
+#redescoro .redesitem{
+	display:flex; 
+	flex-direction:column; 
+	justify-content:center; 
+	align-items:center;
 }
 
 #redescoro .fa-instagram {
@@ -257,6 +266,13 @@ hr {
   background: white;
   color: #e20101;
 }
+
+#redescoro .fa-envelope {
+  background: white;
+  color: #e20101;
+}
+
+
 
 /* ======= RESPONSIVE CSS ======= */
 
@@ -347,8 +363,21 @@ hr {
 		padding-top:0;
 		padding-bottom:0;
 	}
+	#footer{
+		font-size:10px;
+	}
 	
+	#redescoro .redesitem {
+		flex-basis: 50%;
+	}
 
+	#redescoro .redesitem {
+		flex-basis: 50%;
+	}
+	
+	#redescoro .redesitem {
+		flex-basis: 50%;
+	}
 }
 
 
