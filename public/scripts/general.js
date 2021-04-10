@@ -1,4 +1,5 @@
 window.onscroll = function() {scrollFunction()};
+document.getElementById("frontvid").play();
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -30,17 +31,24 @@ function disappear(){
 function disappearSongchart(){
 	var x = document.getElementById("songchart");
 	var y = document.getElementsByClassName("songlist");
+	var z = document.getElementsByClassName("discPortada");
+	console.log(z);
 	if (x.style.opacity === "1") {
 		x.style.setProperty("-webkit-transition", "opacity 1s");
 		x.style.opacity = 0;
 		setTimeout(function(){
-			y[0].style.display = "none";
-			y[1].style.display = "none";
+			for(let i = 0; i < y.length; i++){
+				y[i].style.display = "none";
+				z[i].style.display = "none";
+			};
 		}, 450);
 		
 	} else {
-		y[0].style.display = "block";
-		y[1].style.display = "block";
+		
+		for(let i = 0; i < y.length; i++){
+				y[i].style.display = "block";
+				z[i].style.display = "block";
+			};
 		x.style.opacity = 1;
 		x.style.setProperty("-webkit-transition", "opacity 1s");
 	}

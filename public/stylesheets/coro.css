@@ -162,20 +162,52 @@ hr {
 	width:80%;
 }
 
+.songlist li h4{
+	margin-bottom: 20px;
+}
+
+.songlist hr{
+	border-top: 1.5px solid grey;
+	width:100%;
+	margin: 0;
+}
+
+
 #songchart{
 	display: flex;
-	flex-direction:row;
-	justify-content:space-around; 
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
 	opacity: 0;
+}
+
+.disctype{
+	width:100%;
+	margin-top:20px;
+	margin-bottom:20px;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items:center;
+}
+
+.discPortada{
+	display:none;
+	flex: 50%;
+}
+
+.discPortada img{
+	width:60%;
 }
 
 .songlist{
 	list-style-type:none;
 	display:none;
+	flex: 50%;
 }
 
 .songlist li{
-	margin: 20px 0 20px 0;
+	margin: 5px 0 5px 0;
 }
 
 .songlist i{
@@ -355,13 +387,34 @@ hr {
 	#songchart{
 		flex-direction:column;
 		justify-content:center;
-		align-items:flex-start;
+		align-items:center;
+		margin-top:0;
 	}
+	
+	.disctype{
+		flex-direction: column;
+		justify-content:center;
+		align-items:flex-start;
+
+	}
+	
+	.discPortada{
+		align-self:center;
+		flex: none;
+	}
+	
+	.discPortada img{
+		width:50%;
+		margin-top:10px;
+		margin-bottom:40px;
+	}	
+	
 	.songlist{
 		margin-top:-10px;
 		margin-bottom:-10px;
 		padding-top:0;
 		padding-bottom:0;
+		flex: none;
 	}
 	#footer{
 		font-size:10px;
